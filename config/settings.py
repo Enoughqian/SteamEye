@@ -4,13 +4,13 @@ from typing import Type
 from .base import BaseSettings
 from .dev import DevSettings
 from .prod import ProdSettings
-from .test import TestSettings
+# from .test import TestSettings
 
 # 环境映射：ENV值 → 对应配置类
 ENV_SETTINGS_MAP = {
     "dev": DevSettings,
     "prod": ProdSettings,
-    "test": TestSettings,
+    # "test": TestSettings,
 }
 
 # 加载配置（单例模式）

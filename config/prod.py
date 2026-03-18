@@ -3,8 +3,8 @@ from .base import BaseSettings
 from dotenv import load_dotenv
 import os
 
-class DevSettings(BaseSettings):
-    load_dotenv(".dev_env")
+class ProdSettings(BaseSettings):
+    load_dotenv(".prod_env")
     PROD_MYSQL_PASSWORD = os.getenv("PROD_MYSQL_PASSWORD","")
 
     # 拼接MySQL连接URL
